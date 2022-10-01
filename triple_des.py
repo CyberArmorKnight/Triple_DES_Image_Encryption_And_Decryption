@@ -1,4 +1,5 @@
 #Required Libraries importing
+import time
 from Crypto.Cipher import DES
 from Crypto.Hash import SHA256
 from getpass import getpass
