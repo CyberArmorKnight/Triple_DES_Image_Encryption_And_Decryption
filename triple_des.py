@@ -32,7 +32,7 @@ def encryptor(path):
 	
 	key_enc_confirm=getpass(prompt="Enter password again:")
 	while key_enc!=key_enc_confirm:
-		print("Key Mismatch.Try again.")
+		print("Key Mismatch.Try again!!!!!")
 		key_enc=getpass(prompt="Enter 8 character long password:")
 	
 		#Checking if key is of invalid length
@@ -46,7 +46,7 @@ def encryptor(path):
 
 	
 	#Encrypting using triple 3 key DES	
-	print("Wait it is being encrypting...\n")	
+	print("Wait it is being encrypting.....\n")	
 	try:
 		
 		cipher1=DES.new(key_enc[0:8],DES.MODE_CBC,key_enc[24:32])
@@ -134,7 +134,7 @@ def decryptor(encrypted_image_path):
 		print("Password Correct !!!")
 		print("	------DECRYPTION SUCCESSFUL------")
 	else:
-		print("Incorrect Password!!!")
+		print("Incorrect Password!!!!!")
 		exit()
 		
 		
